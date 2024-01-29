@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title:const Text('Home'),
         backgroundColor: Colors.tealAccent,
         centerTitle: true,
       ),
@@ -61,6 +61,30 @@ class _HomeState extends State<Home> {
 
                 child: const Center(child: Text(
                   'IMAGES',
+                  style: TextStyle(
+                      color: Colors.white
+                  ),
+                )),
+
+              ),
+            ),
+          ),
+          const SizedBox(height: 25,),
+          Center(
+            child: InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, RoutesName.users);
+              },
+              child: Container(
+                height: 60,
+                width: 100,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(15)
+                ),
+
+                child: const Center(child: Text(
+                  'USERS',
                   style: TextStyle(
                       color: Colors.white
                   ),
