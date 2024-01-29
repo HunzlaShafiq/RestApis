@@ -40,7 +40,7 @@ class _ApiIntegrationState extends State<ApiIntegration> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title:const Text("APi Integration"),
+        title:const Text("Rest Api POSTS"),
         backgroundColor: Colors.tealAccent,
       ),
       body: Column(

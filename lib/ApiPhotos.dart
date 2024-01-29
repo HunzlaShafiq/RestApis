@@ -33,7 +33,7 @@ class _ApiPhotosState extends State<ApiPhotos> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Api Photos'),
+        title:const Text('Rest Api Photo'),
         backgroundColor: Colors.tealAccent,
         centerTitle: true,
       ),
