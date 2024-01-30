@@ -50,9 +50,14 @@ class _ApiPhotosState extends State<ApiPhotos> {
                   return ListView.builder(
                       itemBuilder:(context,index){
                         return Card(
+                          margin:const EdgeInsets.all(10),
                             child: Column(
                                 children: [
-                            Image.network(photoList[index].thumbnailUrl.toString(),width: 150,height: 80,),
+                                  Text('ID: ${photoList[index].id}'),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image.network(photoList[index].thumbnailUrl.toString(),width: 150,height: 80,),
+                            ),
 
                                 ]
                             )

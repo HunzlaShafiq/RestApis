@@ -54,7 +54,7 @@ class _ApiIntegrationState extends State<ApiIntegration> {
                     {
                       return const Center(
                           child: CircularProgressIndicator(
-                            color: Colors.blue,
+                            color: Colors.tealAccent,
                           ));
                     }
                   else
@@ -63,19 +63,46 @@ class _ApiIntegrationState extends State<ApiIntegration> {
                           itemCount: postList.length,
                           itemBuilder: (context,index){
                             return Card(
+                              color: Colors.tealAccent.withOpacity(.5),
+                              margin: EdgeInsets.all(10),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                      'ID: '+postList[index].id.toString(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text('ID: ${postList[index].id}',),
+                                        Text('User ID: ${postList[index].userId}')
+                                      ],
+                                    ),
                                   ),
                                   const SizedBox(height: 15,),
-                                  Text('User ID: '+postList[index].userId.toString()),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                                    child: Text(
+                                        '${postList[index].title}',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),
+
+                                    ),
+                                  ),
                                   const SizedBox(height: 15,),
-                                  Text('Title: '+postList[index].title.toString()),
-                                  const SizedBox(height: 15,),
-                                  Text('Body: '+postList[index].body.toString()),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Container(
+
+                                        child: Text('${postList[index].body}'),
+                                      padding: EdgeInsets.all(15),
+                                      decoration: BoxDecoration(
+                                        color: Colors.tealAccent.shade100,
+                                        borderRadius: BorderRadius.circular(15)
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             );

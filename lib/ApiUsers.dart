@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:restapis/Models/UsersModal.dart';
 import 'package:http/http.dart' as http;
@@ -55,10 +54,23 @@ class _ApiUsersState extends State<ApiUsers> {
                       itemCount: userList.length,
                       itemBuilder: (context,index){
                         return Card(
-                          child: Column(
-                            children: [
-                              Text(userList[index].address!.city.toString())
-                            ],
+                          margin:const EdgeInsets.all(15),
+                          color: Colors.tealAccent.shade100,
+                          child: Padding(
+                            padding: const EdgeInsets.all(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('User Name:    ${userList[index].name}'),
+                                const SizedBox(height: 15,),
+                                Text('User City:    ${userList[index].address!.city}'),
+                                const SizedBox(height: 15,),
+                                Text('User Email:   ${userList[index].email}'),
+                                const SizedBox(height: 15,),
+                                Text('User Company:    ${userList[index].company!.name}')
+                              ],
+                            ),
                           ),
                         );
                       }
