@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
         children: [
           const Text(
               'Click Buttons to Hit Particular REST API',
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.teal,
               fontSize: 20
@@ -53,7 +54,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          const SizedBox(height: 25,),
+          const SizedBox(height: 20,),
           Center(
             child: InkWell(
               onTap: (){
@@ -77,7 +78,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          const SizedBox(height: 25,),
+          const SizedBox(height: 20,),
           Center(
             child: InkWell(
               onTap: (){
@@ -93,6 +94,30 @@ class _HomeState extends State<Home> {
 
                 child: const Center(child: Text(
                   'USERS',
+                  style: TextStyle(
+                      color: Colors.white
+                  ),
+                )),
+
+              ),
+            ),
+          ),
+          const SizedBox(height: 20,),
+          Center(
+            child: InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, RoutesName.album);
+              },
+              child: Container(
+                height: 60,
+                width: 100,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(15)
+                ),
+
+                child: const Center(child: Text(
+                  'ALBUM',
                   style: TextStyle(
                       color: Colors.white
                   ),

@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:restapis/ApiAlbums.dart';
 import 'package:restapis/ApiIntegration.dart';
 import 'package:restapis/ApiPhotos.dart';
 import 'package:restapis/ApiUsers.dart';
@@ -12,6 +13,7 @@ class RoutesName
  static const images='Images';
  static const home='Home';
  static const users='Users';
+ static const album='Album';
 }
 
 class Routes
@@ -28,6 +30,8 @@ class Routes
         return MaterialPageRoute(builder: (context)=>const Home());
       case RoutesName.users:
         return MaterialPageRoute(builder: (context)=>const ApiUsers());
+      case RoutesName.album:
+        return MaterialPageRoute(builder: (context)=>const ApiAlbum());
       default:
         return MaterialPageRoute(builder: (context){
           return const Scaffold(
