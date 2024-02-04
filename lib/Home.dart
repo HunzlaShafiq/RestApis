@@ -126,6 +126,30 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
+          const SizedBox(height: 20,),
+          Center(
+            child: InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, RoutesName.todo);
+              },
+              child: Container(
+                height: 60,
+                width: 100,
+                decoration: BoxDecoration(
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(15)
+                ),
+
+                child: const Center(child: Text(
+                  'TODO',
+                  style: TextStyle(
+                      color: Colors.white
+                  ),
+                )),
+
+              ),
+            ),
+          ),
 
         ],
       ),
