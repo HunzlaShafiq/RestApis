@@ -54,10 +54,12 @@ class _ApiToDoState extends State<ApiToDo> {
                                 leading: CircleAvatar(
                                   backgroundColor: Colors.green.shade50,
                                   child: Center(
-                                    child: Text(data[index]['id']),
+                                    child: Text(data[index]['id'].toString()),
                                   ),
                                 ),
-                                trailing: data[index]['completed']==true ? const Icon(Icons.check_box) : const Icon(Icons.check_box_outline_blank),
+                                trailing: data[index]['completed']== true
+                                    ? const Icon(Icons.check_box) :
+                                const Icon(Icons.check_box_outline_blank),
                               ),
                             );
                           }
