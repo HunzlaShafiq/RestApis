@@ -16,4 +16,23 @@ This project highlights how to fetch, post, update, and delete data from an API 
 
 ---
 
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** (Dart)  
+- **REST APIs (HTTP)**  
+- **Provider / BLoC** for state management  
+- **JSON serialization**  
+- **Error & Exception Handling**
+
+---
+
+## ⚡ How to Run
+
+1. Clone this repository:
+2. 
+   ```bash
+   git clone https://github.com/HunzlaShafiq/restapis-flutter.git
+   
 
