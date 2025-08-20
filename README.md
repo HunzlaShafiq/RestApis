@@ -33,6 +33,6 @@ This project highlights how to fetch, post, update, and delete data from an API 
 1. Clone this repository:
 2. 
    ```bash
-   git clone https://github.com/HunzlaShafiq/restapis-flutter.git
+   git clone https://github.com/HunzlaShafiq/RestApis.git
    
 
