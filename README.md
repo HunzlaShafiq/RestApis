@@ -11,7 +11,7 @@ This project highlights how to fetch, post, update, and delete data from an API 
 - ✅ POST, PUT, DELETE requests implementation  
 - ✅ Error handling & loading states  
 - ✅ Clean and scalable project structure  
-- ✅ State management with **Provider/BLoC**  
+- ✅ State management with **Provider**  
 - ✅ User-friendly and responsive UI  
 
 ---
