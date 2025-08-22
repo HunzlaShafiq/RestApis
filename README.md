@@ -22,7 +22,7 @@ This project highlights how to fetch, post, update, and delete data from an API 
 
 - **Flutter** (Dart)  
 - **REST APIs (HTTP)**  
-- **Provider / BLoC** for state management  
+- **Provider** for state management  
 - **JSON serialization**  
 - **Error & Exception Handling**
 
